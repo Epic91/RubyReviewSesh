@@ -21,8 +21,37 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 ### Baller
 
 - `Baller#initialize`
-  - baller should be initialized with a name"
+  - Baller should be initialized with a name as string, age as integer
+- `Baller.all`
+  - returns **all** of the baller instances
+- `Baller#reservations`
+  - returns an array of all reservations for that baller
+- `Baller#add_reservation(vip, day)`
+  - given a **vip object** and day (as a string), create a new reservation and associate it with that baller and vip
+- `Baller.oldest_baller`
+  - returns the name of the oldest baller
+- `Baller.flashiest_baller`
+  - returns the baller with the most reservations
 
 ### Vip
+- `Vip#initialize`
+  - Vip should be initialized with a name as string
+- `Vip#location`
+  - Vip should be initialized with a location as string
+- `Vip#price`
+  - Vip should be initialized with a price an integer
+- `Vip#ballers`
+  - returns a **unique** list of all ballers who have been to this vip lounge
+- `Vip.hundred_club`
+  - returns the first vip instance with a price over $100
 
 ### Reservation
+- `Reservation#initialize`
+  - Reservation should be initialized with a name as baller, vip, and day (a string)
+- `Reservation.all`
+  - returns **all** of the reservation instances
+- `Reservation#baller`
+  - returns the baller object for that reservation
+  - once a reservation is made, should not be able to change the baller
+- `Reservation.monday`
+  - returns the reservations made on a Monday
