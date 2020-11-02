@@ -42,12 +42,12 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
   - Vip should be initialized with a price an integer
 - `Vip#ballers`
   - returns a **unique** list of all ballers who have been to this vip lounge
-- `Vip.hundred_club`
-  - returns the first vip instance with a price over $100
+- `Vip.milli_club`
+  - returns the first vip instance with a price over $1000000
 
 ### Reservation
 - `Reservation#initialize`
-  - Reservation should be initialized with a name as baller, vip, and day (a string)
+  - Reservation should be initialized with a baller object, vip object, and day (a string)
 - `Reservation.all`
   - returns **all** of the reservation instances
 - `Reservation#baller`
